@@ -1,6 +1,6 @@
 <?php
 /* Set e-mail recipient */
-$myemail  = "your@email.com";
+$myemail  = "nftw@librenet.org";
 
 /* Check all form inputs using check_input function */
 if (isset($_GET["submit"])) {
@@ -11,7 +11,7 @@ $message = $_GET['message'];
 else {
   echo $myError;
 }
-$subject = "Report From OlympiaMC";
+$subject = "Report From Librenet";
 
 /* If input is not valid show error message */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
@@ -23,7 +23,7 @@ if (preg_match( '/[a-zA-Z]/', $cords )) {
     }
 /* Let's prepare the message for the e-mail */
 $message = "Hello,
-This is a report from the OlympiaMC Bootstrap Template. Below is the information...
+This is a report from the minecraft email system. Below is the information...
 
 Name: $name
 E-mail: $email
